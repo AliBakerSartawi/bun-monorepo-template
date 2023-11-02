@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "paths": {
+      "@trpc/server/dist/core/router": [
+        "../../node_modules/@trpc/server/dist/core/router"
+      ]
+    }
+  }
+}

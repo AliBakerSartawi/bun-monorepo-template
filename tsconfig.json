@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    /* ---------------------------------- Base ---------------------------------- */
+    "esModuleInterop": true, // allow default imports for CommonJS modules
+    "skipLibCheck": true,
+    "target": "esnext",
+    "verbatimModuleSyntax": true,
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "allowImportingTsExtensions": true,
+    "jsx": "preserve",
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* ------------------------------- Strictness ------------------------------- */
+    "strict": true, // Many granular options are not mentioned as they are `true` because of `strict: true`
+    "noUncheckedIndexedAccess": true,
+    "noImplicitReturns": true,
+    "noImplicitOverride": true,
+    "noFallthroughCasesInSwitch": true,
+
+    /* -------------------------- Transpiling With Bun -------------------------- */
+    "moduleResolution": "bundler",
+    "module": "esnext",
+    "noEmit": true,
+
+    /* ----------------------------------- Lib ---------------------------------- */
+    "lib": ["ESNext"],
+    "downlevelIteration": true,
+
+    /* -------------------------------- Monorepo -------------------------------- */
+    "composite": true,
+    "declarationMap": true,
+
+    /* ------------------------------ Global Types ------------------------------ */
+    "types": [
+      "bun-types" // add Bun global
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "@acme/trpc-server",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "bun build server.ts --outdir ./dist",
+    "dev": "bun run server.ts",
+    "start:dev": "bun run server.ts",
+    "start:prod": "bun run dist/index.js",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fastify/cors": "^8.4.0",
+    "@trpc/server": "^10.43.0",
+    "fastify": "^4.24.3",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
