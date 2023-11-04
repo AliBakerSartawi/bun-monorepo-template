@@ -1,0 +1,12 @@
+{
+  "name": "@acme/db",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "bun-types": "latest",
+    "prisma": "^5.5.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
