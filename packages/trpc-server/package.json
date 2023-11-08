@@ -10,6 +10,7 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
+    "@acme/db": "workspace:*",
     "@fastify/cors": "^8.4.0",
     "@trpc/server": "^10.43.0",
     "fastify": "^4.24.3",

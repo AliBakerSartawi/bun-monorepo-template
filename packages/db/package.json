@@ -1,0 +1,20 @@
+{
+  "name": "@acme/db",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "generate": "prisma generate",
+    "studio": "prisma studio",
+    "push": "prisma db push"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "prisma": "^5.5.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.5.2"
+  }
+}
