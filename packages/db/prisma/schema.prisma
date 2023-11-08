@@ -9,3 +9,55 @@ datasource db {
   provider = "mongodb"
   url      = env("DATABASE_URL")
 }
+
+// ------------------------------------------------------ //
+//                         Models                         //
+// ------------------------------------------------------ //
+
+model User {
+  id        String    @id @default(auto()) @map("_id") @db.ObjectId
+  phone     String    @unique
+  password  String
+  email     String?
+  firstName String
+  lastName  String?
+  addresses Address[]
+  role      Role      @default(USER)
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+}
+
+// ------------------------------------------------------ //
+//                          Types                         //
+// ------------------------------------------------------ //
+
+type Address {
+  nickname       String
+  country        String
+  city           String
+  area           String
+  street         String
+  buildingType   BuildingType
+  buildingNumber Int
+  floor          Int?
+  unitNumber     Int?
+  directions     String?
+}
+
+// ------------------------------------------------------ //
+//                          Enums                         //
+// ------------------------------------------------------ //
+
+enum Role {
+  DEVELOPER
+  ADMIN
+  USER
+}
+
+enum BuildingType {
+  VILLA
+  APARTMENT
+  OFFICE
+  OTHER
+}
