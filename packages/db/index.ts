@@ -1,1 +1,1 @@
-console.log("Hello via Bun!");
+export { prisma as db } from './prisma/client';
