@@ -1,5 +1,11 @@
+import { TamaguiProvider, Theme } from 'tamagui';
 import Home from './src/components/Home';
+import { tamaguiConfig as tamaguiConfig } from './tamagui.config';
 
 export default function App() {
-  return <Home />;
+  return (
+    <TamaguiProvider config={tamaguiConfig}>
+      <Home />
+    </TamaguiProvider>
+  );
 }

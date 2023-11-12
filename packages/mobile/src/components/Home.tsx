@@ -1,26 +1,9 @@
-import { StatusBar } from 'expo-status-bar';
-import { useEffect } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { trpc } from '../utils/trpc.utils';
+import { Button, Stack, Text, XStack, YStack } from 'tamagui';
 
 export default function Home() {
-  useEffect(() => {
-    trpc.user.find.query().then((data) => console.log({ data }));
-  }, []);
-
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <YStack h="100vh">
+      <Text>Home</Text>
+    </YStack>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center'
-  }
-});
