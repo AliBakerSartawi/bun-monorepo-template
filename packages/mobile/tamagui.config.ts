@@ -4,7 +4,7 @@
 import { config } from '@tamagui/config/v2-native';
 
 // import { createMedia } from '@tamagui/react-native-media-driver';
-import { createFont, createTamagui, createTokens } from 'tamagui';
+import { createTamagui } from 'tamagui';
 
 // const interFont = createFont({
 //   family: 'Inter, Helvetica, Arial, sans-serif',
@@ -103,8 +103,8 @@ export const tamaguiConfig = createTamagui({
     py: 'paddingVertical',
     f: 'flex',
     w: 'width',
-    h: 'height'
-  } as const
+    h: 'height',
+  } as const,
 
   // Experimental / advanced, only for overriding the core component styles
   // Prefer to use styled() for building your own, only useful for edge cases.

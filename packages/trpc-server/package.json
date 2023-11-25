@@ -12,7 +12,7 @@
   "dependencies": {
     "@acme/db": "workspace:*",
     "@fastify/cors": "^8.4.0",
-    "@trpc/server": "^10.43.0",
+    "@trpc/server": "latest",
     "fastify": "^4.24.3",
     "zod": "^3.22.4"
   },
