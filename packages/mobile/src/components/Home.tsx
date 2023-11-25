@@ -1,4 +1,4 @@
-import { Button, Stack, Text, XStack, YStack } from 'tamagui';
+import { Text, YStack } from 'tamagui';
 
 export default function Home() {
   return (

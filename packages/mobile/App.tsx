@@ -1,4 +1,4 @@
-import { TamaguiProvider, Theme } from 'tamagui';
+import { TamaguiProvider } from 'tamagui';
 import Home from './src/components/Home';
 import { tamaguiConfig as tamaguiConfig } from './tamagui.config';
 
